@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
     <title>دكتور تلخيص</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>مرحباً بك في دكتور تلخيص!</h1>
-    <p>هنا ستجد أداة تلخيص المقالات والفيديوهات.</p>
+    <div class="container">
+        <h1>دكتور تلخيص</h1>
+        <p>أداة مجانية لتلخيص المقالات والفيديوهات</p>
+        <textarea id="input-text" placeholder="الصق المقال أو الرابط هنا..."></textarea>
+        <div class="controls">
+            <input type="number" id="word-count" placeholder="عدد الكلمات">
+            <button id="summarize-btn">تلخيص</button>
+        </div>
+        <div class="output">
+            <h2>الملخص</h2>
+            <p id="summary-result"></p>
+        </div>
+    </div>
 </body>
 </html>
